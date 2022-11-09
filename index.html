@@ -72,6 +72,7 @@
       </div>
     </div>
   </header>
+
   <!-- section serive -->
   <section class="services" id="services">
     <div class="container">
@@ -109,9 +110,8 @@
       </div>
     </div>
   </section>
-  <!-- section partofolio -->
-  <section class="works"></section>
 
+  <!-- section portofolio -->
   <section class="portofolio" id="portofolio">
     <div class="container">
       <div class="portofolio-title">
@@ -215,9 +215,9 @@
         </p>
       </div>
       <div class="contacts-buttom">
-        <a href="#!" class="btn">Send message</a>
+        <a href="#!" class="btn" data-modal="contact-me">Send message</a>
       </div>
-      <div class="contacts-social">
+      <div class="social">
         <a href="https://www.instagram.com/rianbalanph/" target="_blank"><img src="img/social/inst2.png"
             alt="Instagram" /></a>
         <a href="https://www.facebook.com/rian.balan" target="_blank"><img src="img/social/fb2.png"
@@ -239,6 +239,39 @@
       </div>
     </div>
   </footer>
+
+
+  <div class="overlay">
+    <div class="modal" id="contact-me">
+      <div class="modal__close"> &times; </div>
+      <div class="modal__title">Complete the data</div>
+      <div class="modal__subtitle">and i will contact you</div>
+
+      <form class="form" action="#">
+        <input name="name" type="text" required placeholder="Your name">
+        <input name="phone" type="tel" required placeholder="Your phone number">
+        <input name="email" type="email" required placeholder="Your Email"
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+          oninvalid="this.setCustomValidity('Please write a correct email address')"
+          onchange="this.setCustomValidity('')">
+        <button class="btn social_btn">Send message</button>
+      </form>
+      <div class="modal__text">or you can leave me a message on social networks.</div>
+      <div class="social social_modal">
+        <a href="https://www.instagram.com/rianbalanph/" target="_blank"><img src="img/social/inst2.png"
+            alt="Instagram" /></a>
+        <a href="https://www.facebook.com/rian.balan" target="_blank"><img src="img/social/fb2.png"
+            alt="Facebook" /></a>
+        <a href="https://uk.linkedin.com/in/rian-balan-051018215" target="_blank"><img src="img/social/in2.png"
+            alt="LinkedIn" /></a>
+        <a href="mailto:rianbalanph@gmail.com"><img src="img/social/gmail.png" alt="Gmail" /></a>
+        <a href="https://wa.me/+447503518294" target="_blank"><img src="img/social/whatsapp2.png" alt="Whastsapp" /></a>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
   <script src="js/main.js"></script>
 </body>
 
