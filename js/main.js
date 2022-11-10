@@ -96,7 +96,8 @@ const swiper = new Swiper('.swiper', {
         // when window width is >= 640px
         770: {
             slidesPerView: 3,
-            spaceBetween: 40
+            spaceBetween: 40,
+            speed: 4000,
         }
     }
 });
