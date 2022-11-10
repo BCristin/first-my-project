@@ -20,8 +20,6 @@ window.addEventListener('DOMContentLoaded', () => {
     })
 });
 
-
-
 (function ($) {
     $(function () {
         //Modal
@@ -35,3 +33,70 @@ window.addEventListener('DOMContentLoaded', () => {
 })(jQuery);
 
 
+
+// swiper
+const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    // loop: true,
+    slidesPerView: 3,
+    // slidesPerGroup: 1,
+    grabCursor: true,
+    slideToClickedSlide: true,
+    rewind: true,
+    speed: 4000,
+    spaceBetween: 50,
+
+    keyboard: {
+        enabled: true,
+        onlyInViewport: false,
+    }, autoplay: {
+        delay: 10000,
+    },
+    // If we need pagination
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        dynamicBullets: true,
+        dynamicMainBullets: 3,
+
+    },
+
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+
+    // And if we need scrollbar
+    scrollbar: {
+        el: '.swiper-scrollbar',
+        draggable: true,
+        hide: true,
+        dragSize: 200,
+    },
+    preloadImages: false,
+    lazy: {
+        loadOnTransitionStart: false,
+        loadPrevNext: true,
+    },
+    breakpoints: {
+        // when window width is >= 320px
+        320: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            navigation: {
+                enabled: false,
+            }
+        },
+        // when window width is >= 480px
+        440: {
+            slidesPerView: 2,
+            spaceBetween: 30
+        },
+        // when window width is >= 640px
+        770: {
+            slidesPerView: 3,
+            spaceBetween: 40
+        }
+    }
+});

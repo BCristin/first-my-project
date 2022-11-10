@@ -42,6 +42,7 @@ nav {
   padding: 20px 0;
   position: sticky;
   top: -1px;
+  z-index: 10;
 }
 
 .nav {
@@ -170,10 +171,10 @@ nav {
   font-size: 46px;
 }
 
-.project-img {
-  max-width: 300px;
-  margin-bottom: 40px;
-}
+/* .project-img {
+ max-width: 300px; 
+ margin-bottom: 40px; 
+} */
 
 .all-project {
   display: flex;
@@ -188,7 +189,9 @@ nav {
 }
 
 .project-title {
+  text-align: center;
   font-size: 32px;
+  margin: 20px auto 50px;
 }
 
 .project-title a {
@@ -332,3 +335,24 @@ input {
   margin-top: 10px;
   margin-bottom: 20px;
 }
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: var(--yellow);
+}
+
+.swiper-pagination-bullet-active-next,
+.swiper-pagination-bullet-active-prev,
+.swiper-pagination-bullet-active-main,
+.swiper-scrollbar-drag {
+  background-color: var(--yellow);
+}
+
+.swiper-scrollbar {
+  background-color: rgba(255, 221, 68, 0.2);
+}
+
+/* div {
+  border: 1px solid silver;
+}
+ */
