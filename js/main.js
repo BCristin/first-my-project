@@ -43,14 +43,14 @@ const swiper = new Swiper('.swiper', {
     grabCursor: true,
     slideToClickedSlide: true,
     rewind: true,
-    speed: 4000,
-    spaceBetween: 50,
+    // speed: 4000,
+    spaceBetween: 20,
 
     keyboard: {
         enabled: true,
         onlyInViewport: false,
     }, autoplay: {
-        delay: 10000,
+        delay: 5000,
     },
     // If we need pagination
     pagination: {
@@ -72,7 +72,7 @@ const swiper = new Swiper('.swiper', {
         el: '.swiper-scrollbar',
         draggable: true,
         hide: true,
-        dragSize: 200,
+        // dragSize: 200,
     },
     preloadImages: false,
     lazy: {
