@@ -278,6 +278,23 @@ nav {
   padding: 40px;
 }
 
+.form::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(241, 241, 241, 0.8) url(../img/loading.gif) center / 50px no-repeat;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.form._sending::after {
+  opacity: 1;
+  visibility: visible;
+}
+
 .modal__close {
   position: absolute;
   top: 10px;
@@ -330,6 +347,10 @@ input {
   padding: 7px 22px;
   border-radius: 30px;
   font-size: 20px;
+}
+
+input._error {
+  box-shadow: 0 0 15px red;
 }
 
 .social_btn {
